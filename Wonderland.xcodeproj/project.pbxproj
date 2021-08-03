@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840BDBEB26B93B1600B2C18E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BDBEA26B93B1600B2C18E /* main.m */; };
+		8421A5B226B83F4E007B55BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5B126B83F4E007B55BC /* AppDelegate.m */; };
+		8421A5B726B842C3007B55BC /* OpenGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5B526B842C3007B55BC /* OpenGLRenderer.cpp */; };
+		8421A5BA26B8451F007B55BC /* RendererWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5B926B8451F007B55BC /* RendererWrapper.mm */; };
+		8421A5C426B84A3F007B55BC /* WonderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5C326B84A3F007B55BC /* WonderController.m */; };
+		8421A5C826B84AA0007B55BC /* WonderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5C726B84AA0007B55BC /* WonderView.m */; };
+		8421A5E626B85C56007B55BC /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5CF26B85C56007B55BC /* VertexBuffer.cpp */; };
+		8421A5E726B85C56007B55BC /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5D026B85C56007B55BC /* Mesh.cpp */; };
+		8421A5E826B85C56007B55BC /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5D226B85C56007B55BC /* Camera.cpp */; };
+		8421A5E926B85C56007B55BC /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5D326B85C56007B55BC /* VertexArray.cpp */; };
+		8421A5EA26B85C56007B55BC /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5D426B85C56007B55BC /* Texture.cpp */; };
+		8421A5EB26B85C56007B55BC /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5D526B85C56007B55BC /* Shader.cpp */; };
+		8421A5EC26B85C56007B55BC /* IndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8421A5DC26B85C56007B55BC /* IndexBuffer.cpp */; };
+		8421A5ED26B85C56007B55BC /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5DF26B85C56007B55BC /* ball.png */; };
+		8421A5EE26B85C56007B55BC /* grass1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5E026B85C56007B55BC /* grass1.png */; };
+		8421A5EF26B85C56007B55BC /* ball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5E126B85C56007B55BC /* ball1.png */; };
+		8421A5F026B85C56007B55BC /* Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5E226B85C56007B55BC /* Fragment.glsl */; };
+		8421A5F126B85C56007B55BC /* Vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5E326B85C56007B55BC /* Vertex.glsl */; };
+		8421A5F226B85C56007B55BC /* arbuz.png in Resources */ = {isa = PBXBuildFile; fileRef = 8421A5E426B85C56007B55BC /* arbuz.png */; };
+		8421A60626B85CF5007B55BC /* libglm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8421A5FA26B85CAD007B55BC /* libglm.a */; };
+		8421A60726B85CF5007B55BC /* stb_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8421A60026B85CCC007B55BC /* stb_image.a */; };
+		845DC2A526B722A200877D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845DC2A426B722A200877D3E /* Assets.xcassets */; };
+		845DC2A826B722A200877D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845DC2A626B722A200877D3E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8421A5F926B85CAD007B55BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421A5F526B85CAD007B55BC /* glm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED8C157052A04F44B8281FB4;
+			remoteInfo = glm;
+		};
+		8421A5FF26B85CCC007B55BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421A5FB26B85CCC007B55BC /* stb_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 840A621F269DDDDB0051E485;
+			remoteInfo = stb_image;
+		};
+		8421A60126B85CEF007B55BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421A5FB26B85CCC007B55BC /* stb_image.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 840A621E269DDDDB0051E485;
+			remoteInfo = stb_image;
+		};
+		8421A60326B85CEF007B55BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8421A5F526B85CAD007B55BC /* glm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C43CE40BAFD40989B7BFB16;
+			remoteInfo = glm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840BDBE826B9228300B2C18E /* WonderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WonderController.h; sourceTree = "<group>"; };
+		840BDBE926B9230C00B2C18E /* WonderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WonderView.h; sourceTree = "<group>"; };
+		840BDBEA26B93B1600B2C18E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		840BDBEC26B93B5400B2C18E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8421A5B126B83F4E007B55BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8421A5B526B842C3007B55BC /* OpenGLRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLRenderer.cpp; sourceTree = "<group>"; };
+		8421A5B626B842C3007B55BC /* OpenGLRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenGLRenderer.hpp; sourceTree = "<group>"; };
+		8421A5B926B8451F007B55BC /* RendererWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererWrapper.mm; sourceTree = "<group>"; };
+		8421A5BB26B8458A007B55BC /* RendererWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererWrapper.h; sourceTree = "<group>"; };
+		8421A5C326B84A3F007B55BC /* WonderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WonderController.m; sourceTree = "<group>"; };
+		8421A5C726B84AA0007B55BC /* WonderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WonderView.m; sourceTree = "<group>"; };
+		8421A5CF26B85C56007B55BC /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		8421A5D026B85C56007B55BC /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		8421A5D126B85C56007B55BC /* IndexBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IndexBuffer.hpp; sourceTree = "<group>"; };
+		8421A5D226B85C56007B55BC /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		8421A5D326B85C56007B55BC /* VertexArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
+		8421A5D426B85C56007B55BC /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		8421A5D526B85C56007B55BC /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		8421A5D626B85C56007B55BC /* VertexArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexArray.hpp; sourceTree = "<group>"; };
+		8421A5D726B85C56007B55BC /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		8421A5D826B85C56007B55BC /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		8421A5D926B85C56007B55BC /* VertexBufferLayout.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexBufferLayout.hpp; sourceTree = "<group>"; };
+		8421A5DA26B85C56007B55BC /* VertexBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VertexBuffer.hpp; sourceTree = "<group>"; };
+		8421A5DB26B85C56007B55BC /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		8421A5DC26B85C56007B55BC /* IndexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndexBuffer.cpp; sourceTree = "<group>"; };
+		8421A5DD26B85C56007B55BC /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		8421A5DF26B85C56007B55BC /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		8421A5E026B85C56007B55BC /* grass1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass1.png; sourceTree = "<group>"; };
+		8421A5E126B85C56007B55BC /* ball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball1.png; sourceTree = "<group>"; };
+		8421A5E226B85C56007B55BC /* Fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fragment.glsl; sourceTree = "<group>"; };
+		8421A5E326B85C56007B55BC /* Vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vertex.glsl; sourceTree = "<group>"; };
+		8421A5E426B85C56007B55BC /* arbuz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arbuz.png; sourceTree = "<group>"; };
+		8421A5F526B85CAD007B55BC /* glm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glm.xcodeproj; path = Vendor/glm/glm.xcodeproj; sourceTree = "<group>"; };
+		8421A5FB26B85CCC007B55BC /* stb_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stb_image.xcodeproj; path = Vendor/stb_image/stb_image.xcodeproj; sourceTree = "<group>"; };
+		845DC29526B722A000877D3E /* Wonderland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wonderland.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845DC2A426B722A200877D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845DC2A726B722A200877D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845DC2A926B722A200877D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845DC29226B722A000877D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421A60626B85CF5007B55BC /* libglm.a in Frameworks */,
+				8421A60726B85CF5007B55BC /* stb_image.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8421A5B426B842B8007B55BC /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5CE26B85C56007B55BC /* core */,
+				8421A5B526B842C3007B55BC /* OpenGLRenderer.cpp */,
+				8421A5B626B842C3007B55BC /* OpenGLRenderer.hpp */,
+				8421A5B926B8451F007B55BC /* RendererWrapper.mm */,
+				8421A5BB26B8458A007B55BC /* RendererWrapper.h */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		8421A5C626B84A94007B55BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840BDBE926B9230C00B2C18E /* WonderView.h */,
+				8421A5C726B84AA0007B55BC /* WonderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8421A5CE26B85C56007B55BC /* core */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5CF26B85C56007B55BC /* VertexBuffer.cpp */,
+				8421A5DA26B85C56007B55BC /* VertexBuffer.hpp */,
+				8421A5D026B85C56007B55BC /* Mesh.cpp */,
+				8421A5DB26B85C56007B55BC /* Mesh.hpp */,
+				8421A5D926B85C56007B55BC /* VertexBufferLayout.hpp */,
+				8421A5D126B85C56007B55BC /* IndexBuffer.hpp */,
+				8421A5DC26B85C56007B55BC /* IndexBuffer.cpp */,
+				8421A5D326B85C56007B55BC /* VertexArray.cpp */,
+				8421A5D626B85C56007B55BC /* VertexArray.hpp */,
+				8421A5D426B85C56007B55BC /* Texture.cpp */,
+				8421A5D726B85C56007B55BC /* Texture.hpp */,
+				8421A5D526B85C56007B55BC /* Shader.cpp */,
+				8421A5D826B85C56007B55BC /* Shader.hpp */,
+				8421A5D226B85C56007B55BC /* Camera.cpp */,
+				8421A5DD26B85C56007B55BC /* Camera.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		8421A5F426B85C9D007B55BC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5FB26B85CCC007B55BC /* stb_image.xcodeproj */,
+				8421A5F526B85CAD007B55BC /* glm.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8421A5F626B85CAD007B55BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5FA26B85CAD007B55BC /* libglm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8421A5FC26B85CCC007B55BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8421A60026B85CCC007B55BC /* stb_image.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845DC28C26B722A000877D3E = {
+			isa = PBXGroup;
+			children = (
+				845DC29726B722A000877D3E /* Wonderland */,
+				8421A5F426B85C9D007B55BC /* Vendor */,
+				845DC29626B722A000877D3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845DC29626B722A000877D3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845DC29526B722A000877D3E /* Wonderland.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845DC29726B722A000877D3E /* Wonderland */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5B426B842B8007B55BC /* Renderer */,
+				845DC2B126B72A4100877D3E /* MainFiles */,
+				845DC2B226B72A4900877D3E /* Controller */,
+				845DC2B326B72AB300877D3E /* Resources */,
+			);
+			path = Wonderland;
+			sourceTree = "<group>";
+		};
+		845DC2B126B72A4100877D3E /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				840BDBEC26B93B5400B2C18E /* AppDelegate.h */,
+				8421A5B126B83F4E007B55BC /* AppDelegate.m */,
+				840BDBEA26B93B1600B2C18E /* main.m */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		845DC2B226B72A4900877D3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				840BDBE826B9228300B2C18E /* WonderController.h */,
+				8421A5C326B84A3F007B55BC /* WonderController.m */,
+				8421A5C626B84A94007B55BC /* View */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		845DC2B326B72AB300877D3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8421A5DF26B85C56007B55BC /* ball.png */,
+				8421A5E026B85C56007B55BC /* grass1.png */,
+				8421A5E126B85C56007B55BC /* ball1.png */,
+				8421A5E226B85C56007B55BC /* Fragment.glsl */,
+				8421A5E326B85C56007B55BC /* Vertex.glsl */,
+				8421A5E426B85C56007B55BC /* arbuz.png */,
+				845DC2A426B722A200877D3E /* Assets.xcassets */,
+				845DC2A626B722A200877D3E /* LaunchScreen.storyboard */,
+				845DC2A926B722A200877D3E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845DC29426B722A000877D3E /* Wonderland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845DC2AE26B722A200877D3E /* Build configuration list for PBXNativeTarget "Wonderland" */;
+			buildPhases = (
+				845DC29126B722A000877D3E /* Sources */,
+				845DC29226B722A000877D3E /* Frameworks */,
+				845DC29326B722A000877D3E /* Resources */,
+				84F0ECDB26B93F330080153D /* Clang Format */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8421A60226B85CEF007B55BC /* PBXTargetDependency */,
+				8421A60426B85CEF007B55BC /* PBXTargetDependency */,
+			);
+			name = Wonderland;
+			productName = Wonderland;
+			productReference = 845DC29526B722A000877D3E /* Wonderland.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845DC28D26B722A000877D3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					845DC29426B722A000877D3E = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 845DC29026B722A000877D3E /* Build configuration list for PBXProject "Wonderland" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845DC28C26B722A000877D3E;
+			productRefGroup = 845DC29626B722A000877D3E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8421A5F626B85CAD007B55BC /* Products */;
+					ProjectRef = 8421A5F526B85CAD007B55BC /* glm.xcodeproj */;
+				},
+				{
+					ProductGroup = 8421A5FC26B85CCC007B55BC /* Products */;
+					ProjectRef = 8421A5FB26B85CCC007B55BC /* stb_image.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				845DC29426B722A000877D3E /* Wonderland */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8421A5FA26B85CAD007B55BC /* libglm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglm.a;
+			remoteRef = 8421A5F926B85CAD007B55BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8421A60026B85CCC007B55BC /* stb_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = stb_image.a;
+			remoteRef = 8421A5FF26B85CCC007B55BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845DC29326B722A000877D3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421A5F226B85C56007B55BC /* arbuz.png in Resources */,
+				845DC2A826B722A200877D3E /* LaunchScreen.storyboard in Resources */,
+				8421A5EF26B85C56007B55BC /* ball1.png in Resources */,
+				845DC2A526B722A200877D3E /* Assets.xcassets in Resources */,
+				8421A5EE26B85C56007B55BC /* grass1.png in Resources */,
+				8421A5ED26B85C56007B55BC /* ball.png in Resources */,
+				8421A5F026B85C56007B55BC /* Fragment.glsl in Resources */,
+				8421A5F126B85C56007B55BC /* Vertex.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F0ECDB26B93F330080153D /* Clang Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Clang Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/format.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845DC29126B722A000877D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840BDBEB26B93B1600B2C18E /* main.m in Sources */,
+				8421A5C426B84A3F007B55BC /* WonderController.m in Sources */,
+				8421A5B726B842C3007B55BC /* OpenGLRenderer.cpp in Sources */,
+				8421A5EC26B85C56007B55BC /* IndexBuffer.cpp in Sources */,
+				8421A5B226B83F4E007B55BC /* AppDelegate.m in Sources */,
+				8421A5E726B85C56007B55BC /* Mesh.cpp in Sources */,
+				8421A5E826B85C56007B55BC /* Camera.cpp in Sources */,
+				8421A5EA26B85C56007B55BC /* Texture.cpp in Sources */,
+				8421A5BA26B8451F007B55BC /* RendererWrapper.mm in Sources */,
+				8421A5EB26B85C56007B55BC /* Shader.cpp in Sources */,
+				8421A5C826B84AA0007B55BC /* WonderView.m in Sources */,
+				8421A5E926B85C56007B55BC /* VertexArray.cpp in Sources */,
+				8421A5E626B85C56007B55BC /* VertexBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8421A60226B85CEF007B55BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = stb_image;
+			targetProxy = 8421A60126B85CEF007B55BC /* PBXContainerItemProxy */;
+		};
+		8421A60426B85CEF007B55BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glm;
+			targetProxy = 8421A60326B85CEF007B55BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845DC2A626B722A200877D3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845DC2A726B722A200877D3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845DC2AC26B722A200877D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OBJROOT = "${SRCROOT}/bin-int";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = "${SRCROOT}/bin";
+			};
+			name = Debug;
+		};
+		845DC2AD26B722A200877D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OBJROOT = "${SRCROOT}/bin-int";
+				SDKROOT = iphoneos;
+				SYMROOT = "${SRCROOT}/bin";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845DC2AF26B722A200877D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXAGVF2MTG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/Vendor/glm",
+					"${SRCROOT}/Vendor/stb_image",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wonderland/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andreichev.Wonderland;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wonderland/MainFiles/Wonderland-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845DC2B026B722A200877D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NXAGVF2MTG;
+				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/Vendor/glm",
+					"${SRCROOT}/Vendor/stb_image",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wonderland/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = andreichev.Wonderland;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wonderland/MainFiles/Wonderland-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845DC29026B722A000877D3E /* Build configuration list for PBXProject "Wonderland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DC2AC26B722A200877D3E /* Debug */,
+				845DC2AD26B722A200877D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845DC2AE26B722A200877D3E /* Build configuration list for PBXNativeTarget "Wonderland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DC2AF26B722A200877D3E /* Debug */,
+				845DC2B026B722A200877D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845DC28D26B722A000877D3E /* Project object */;
+}
